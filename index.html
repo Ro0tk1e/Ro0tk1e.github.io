@@ -68,7 +68,6 @@
       color: #19ffd0;
     }
 
-    /* Profile circle, transparent gap, neon fill */
     .profile-ring {
       position: relative;
       width: 230px;
@@ -92,7 +91,6 @@
     }
 
     .profile-ring .meter-fill {
-      /* Green neon radial glow between the rings */
       background:
         radial-gradient(circle at 50% 50%, rgba(38, 255, 196, 0.24) 66px, rgba(38, 255, 196, 0.38) 85px, rgba(38, 255, 196, 0.15) 95px, transparent 123px);
       filter: blur(2.5px);
@@ -103,12 +101,10 @@
     .profile-ring:focus .meter-fill {
       opacity: 1;
       filter: blur(3.8px);
-      /* Brighten the meter fill when hovered */
       background:
         radial-gradient(circle at 50% 50%, rgba(38, 255, 196, 0.40) 66px, rgba(70, 255, 232, 0.34) 90px, rgba(10, 255, 200, 0.23) 110px, transparent 124px);
     }
 
-    /* Neon rings (both green, with transparent gap between) */
     .profile-ring .ring {
       position: absolute;
       inset: 0;
@@ -128,7 +124,6 @@
       top: 0;
     }
 
-    /* Inner ring */
     .profile-ring .ring.inner {
       border: 3px solid var(--ring-green);
       width: 180px;
@@ -141,7 +136,6 @@
       z-index: 2;
     }
 
-    /* Avatar (inside inner ring) */
     .profile-avatar {
       position: absolute;
       top: 31px;
@@ -402,7 +396,7 @@
       <div class="ring outer" aria-hidden="true"></div>
       <div class="ring inner" aria-hidden="true"></div>
       <div class="profile-avatar">
-        <img src="cyberrazor-reports/Untitled.jpeg" alt="Mohammed Assad portrait">
+        <img src="Untitled.jpeg" alt="Mohammed Assad portrait">
       </div>
     </div>
     <div class="title">
@@ -426,13 +420,13 @@
     </div>
     <div class="glass-card" id="achievements-card">
       <div class="section-title">Achievements</div>
-      <div class="proj"><strong>Hosted Yenepoya's first‑ever CTF</strong>
-        <div class="small">Owned challenge pipeline, infra, and on‑site ops; post‑event report included solve stats and
+      <div class="proj"><strong>Hosted Yenepoya's first-ever CTF</strong>
+        <div class="small">Owned challenge pipeline, infra, and on-site ops; post-event report included solve stats and
           improvement plan for the next iteration.</div>
       </div>
       <div class="proj"><strong>OWASP Uncrackable (L3) — Android Reverse</strong>
         <div class="small">Patched smali with consistent rebuild/sign steps and validation tests; documented tracing
-          flow and anti‑tamper bypass as a reproducible guide.</div>
+          flow and anti-tamper bypass as a reproducible guide.</div>
       </div>
       <div class="proj"><strong>Triada — Team Rank & Writeups</strong>
         <div class="small">Published 15+ writeups across steg, reversing, crypto, and pwn with exact commands and
@@ -443,13 +437,13 @@
     <div class="projects-3d">
       <div class="glass-card project-card" tabindex="0">
         <h3>Stegada — Steganography Toolkit</h3>
-        <p>Unified detectors and extractors with format probes, hash‑based verification, and batch mode for images and
+        <p>Unified detectors and extractors with format probes, hash-based verification, and batch mode for images and
           audio to streamline CTF forensics workflows.</p>
       </div>
       <div class="glass-card project-card" tabindex="0">
         <h3>Recon Automations</h3>
         <p>Lightweight scripts for asset discovery, subdomain triage, and fingerprinting to speed bug bounty scoping and
-          prioritize high‑signal targets.</p>
+          prioritize high-signal targets.</p>
       </div>
     </div>
     <div class="glass-card" id="certifications-card">
@@ -542,7 +536,6 @@
     </div>
   </div>
   <script>
-    // Fade/hover for glass sections only
     document.querySelectorAll('.glass-card').forEach(card => {
       card.addEventListener('touchstart', () => card.classList.add('active'));
       card.addEventListener('touchend', () => setTimeout(() => card.classList.remove('active'), 410));
