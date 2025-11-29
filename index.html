@@ -246,11 +246,17 @@
     .dl{ display:flex; align-items:center; justify-content:center; gap:12px; padding:12px; border-radius:10px; }
     .btn{ background: linear-gradient(90deg,var(--meter-green),#3bf2b0); padding:11px 15px; border-radius:10px; color:#021012; font-weight:700; text-decoration:none; }
 
-    /* responsiveness */
-    @media(max-width:900px){
-      .item-grid, .skills-grid{ grid-template-columns: 1fr; }
-      .bottom-row{ grid-template-columns:1fr; }
-    }
+    //* --- FONT SIZE UPGRADE FOR WIDE SCREENS (ONLY CHANGE) --- */
+@media(min-width:1300px){
+  .title h1{ font-size:2.7em; }
+  .title p{ font-size:1.25em; }
+  .section-title{ font-size:1.42em; }
+  .small{ font-size:16px; }
+  .item-card .item-title{ font-size:1.1em; }
+  .item-card .item-desc{ font-size:15.5px; }
+  .skill-card{ font-size:16px; }
+  .card{ font-size:1.08em; }
+}
 
   </style>
 </head>
