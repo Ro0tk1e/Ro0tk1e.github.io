@@ -1,6 +1,3 @@
-/* ============================================
-   CYBERSECURITY PORTFOLIO — JAVASCRIPT
-   ============================================ */
 
 (function () {
     'use strict';
@@ -479,7 +476,7 @@
             contact: () => scrollToSection('#contact'),
             github: () => window.open('https://github.com/Ro0tk1e', '_blank'),
             linkedin: () => window.open('https://linkedin.com/in/asd-assad-632676308', '_blank'),
-            resume: () => { const a = document.createElement('a'); a.href = 'M_Assadresume_.pdf'; a.download = ''; a.click(); },
+            resume: () => { const a = document.createElement('a'); a.href = 'Mohammed_Assad_REsuMe.pdf'; a.download = ''; a.click(); },
             top: () => window.scrollTo({ top: 0, behavior: 'smooth' })
         };
 
